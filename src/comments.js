@@ -6,9 +6,9 @@ import {
     THUMB_DOWN_COMMENT
 }   from './actions';
   
-export function comments (state = [], action) {
+export default function comments (state = [], action) {
     switch(action.type) {
-        
+
         case ADD_COMMENT:
                 if (action.text!=="") {
                     return  [{

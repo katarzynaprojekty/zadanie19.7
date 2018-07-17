@@ -1,12 +1,10 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 import comments from './comments.js';
-import  formReducer from './formReducer.js';
 import users from './users.js';
 
-const rootReducer = combineReducers({
-  form: formReducer,
-  users,
-  comments
-})
+const reducer = combineReducers({
+  comments,
+  users
+});
 
-export default rootReducer;
+export default reducer;
