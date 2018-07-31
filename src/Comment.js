@@ -8,8 +8,8 @@ const Comment = ({text, votes, id, thumbUpComment, thumbDownComment, removeComme
       <button className="bUp" onClick={() => thumbUpComment(id)}>Thumb up</button> 
       <button className="bDown" onClick={() => thumbDownComment(id)}>Thumb down</button>
       <button className="bDelete" onClick={() => removeComment(id)}>Delete</button>
-      <button className="bEdit" onClick={() => editComment(text=window.prompt("edit comment:"))}>Edit comment</button>
-      <button className="bAdd" onClick={() => addComment( text=window.prompt("new comment:"))}>New comment</button>   
+      <button className="bEdit" onClick={() => editComment(id, text=window.prompt("edit comment:"))}>Edit comment</button>
+      <button className="bAdd" onClick={() => addComment(text=window.prompt("new comment:"))}>New comment</button>   
     </div>
   </li>;
 
